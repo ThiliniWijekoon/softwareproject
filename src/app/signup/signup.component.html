@@ -1,0 +1,127 @@
+<div class="center-content">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Hello!</mat-card-title>
+        <mat-card-subtitle>Sign Up</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-tab-group>
+            <mat-tab label="Sign Up As User ">
+                <mat-form-field appearance="fill">
+                    <mat-label>Name</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                  <mat-label>Email</mat-label>
+                  <input type="email" matInput placeholder="Email" value="" [(ngModel)]="remail">
+                  <mat-icon matSuffix>email</mat-icon>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Country</mat-label>
+                    <mat-select>
+                      <mat-option value="one">Australia</mat-option>
+                      <mat-option value="two">Canada</mat-option>
+                      <mat-option value="three">Sri Lanka</mat-option>
+                      <mat-option value="four">United States</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+
+                  <mat-form-field appearance="fill">
+                    <mat-label>Address</mat-label>
+                    <textarea matInput></textarea>
+                  </mat-form-field>
+                  
+                <div class="row">
+                    <div class="dropup" class="col-sm-4">
+                        <mat-form-field appearance="fill">
+                            <mat-label>-Select-</mat-label>
+                            <mat-select>
+                              <mat-option value="one">+1</mat-option>
+                              <mat-option value="two">+61</mat-option>
+                              <mat-option value="three">+94</mat-option>
+                            </mat-select>
+                          </mat-form-field>
+        
+                    </div>
+                      <div class="col-sm-8">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Mobile Number</mat-label>
+                            <input matInput>
+                          </mat-form-field>        
+                      </div>
+                      
+                </div>
+                
+                <mat-form-field class="example-full-width">
+                  <mat-label>Password</mat-label>
+                  <input type="password" matInput placeholder="Password" [(ngModel)]="rpassword">
+                  <mat-icon matSuffix>vpn_key</mat-icon>
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                  <mat-label>Password</mat-label>
+                  <input type="password" matInput placeholder="Password" [(ngModel)]="rcpassword">
+                  <mat-icon matSuffix>vpn_key</mat-icon>
+                </mat-form-field>
+                <button mat-button color="primary" (click)="register()">Submit</button>
+              </mat-tab>
+
+
+          <mat-tab label="Sign Up As Administrator">
+            <mat-form-field appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Email</mat-label>
+              <input type="email" matInput placeholder="Email" value="" [(ngModel)]="remail">
+              <mat-icon matSuffix>email</mat-icon>
+            </mat-form-field>
+
+            <div class="row">
+                <div class="dropup" class="col-sm-4">
+                    <mat-form-field appearance="fill">
+                        <mat-label>-Select-</mat-label>
+                        <mat-select>
+                          <mat-option value="one">+1</mat-option>
+                          <mat-option value="two">+61</mat-option>
+                          <mat-option value="three">+94</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+    
+                </div>
+                  <div class="col-sm-8">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Mobile Number</mat-label>
+                        <input matInput>
+                      </mat-form-field>        
+                </div>
+                  
+            </div>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Username</mat-label>
+                <input matInput>
+            </mat-form-field>
+
+  
+            <mat-form-field class="example-full-width">
+              <mat-label>Password</mat-label>
+              <input type="password" matInput placeholder="Password" [(ngModel)]="rpassword">
+              <mat-icon matSuffix>vpn_key</mat-icon>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <mat-label>Password</mat-label>
+              <input type="password" matInput placeholder="Password" [(ngModel)]="rcpassword">
+              <mat-icon matSuffix>vpn_key</mat-icon>
+            </mat-form-field>
+            <button mat-button color="primary" (click)="register()">Submit</button>
+          </mat-tab>
+        </mat-tab-group>
+  
+      </mat-card-content>
+  
+    </mat-card>
+  </div>

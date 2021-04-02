@@ -1,0 +1,132 @@
+<!--<div class="container">
+    <div class="row">
+        <div class="col-sm-1">
+            
+        </div>
+
+        <div class="col-sm-10">
+            <mat-card>
+                <mat-tab-group>
+                    <mat-tab label="Login As User"> 
+                        <mat-card>
+                        <br>
+                        <h2 style="text-align: center;">Hello!</h2>
+                        
+                        <mat-form-field appearance="fill">
+                            <mat-label>Enter your email</mat-label>
+                            <input matInput placeholder="pat@example.com" [formControl]="email" required>
+                            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                          </mat-form-field>
+                        
+                        <form action="">
+                            <label><b>Email</b></label>
+                            <input type="text" class="form-control">
+                            <br>
+                            <label><b>Password</b></label>
+                            <input type="password" class="form-control">
+                            <br>
+                            
+                            
+                             <a href="">Forgot Password</a> 
+                             <br>  
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <button class="btn btn-primary" type="submit"  >Login</button> 
+                                </div>
+                                
+                            </div>
+                            
+                        </form>
+                        <br>
+                        <br>
+                        </mat-card> 
+                        <br>
+                        <br>
+                    </mat-tab>
+            
+            
+            
+                    <mat-tab label="Login As Administrator">
+                        <mat-card>
+                            <br>
+                            <h2 style="text-align: center;">Hello!</h2>
+                            <form action="">
+                                <label><b>Username</b></label>
+                                <input type="text" class="form-control">
+                                <br>
+                                <label><b>Password</b></label>
+                                <input type="password" class="form-control">
+                                <br>
+                                <a href="">Forgot Password</a>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <button class="btn btn-primary" type="submit">Login</button> 
+                                    </div>
+                                    
+                                </div>
+                                <br>
+                                <br>
+                            </form>
+                        </mat-card>
+                        <br>
+                        <br>
+                    </mat-tab>
+                  </mat-tab-group>   
+                  <br>
+                  <br>
+            </mat-card>
+        </div>
+
+        <div class="col-sm-1">
+        
+        </div>
+
+    </div>
+    
+    
+ </div>-->
+
+
+
+ <div class="center-content">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Hello!</mat-card-title>
+        <mat-card-subtitle>Login</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-tab-group>
+          <mat-tab label="Login As User">
+            <mat-form-field class="example-full-width">
+              <mat-label>Email</mat-label>
+              <input type="email" matInput placeholder="Email" value="" [(ngModel)]="email">
+              <mat-icon matSuffix>email</mat-icon>
+            </mat-form-field>
+  
+            <mat-form-field class="example-full-width">
+              <mat-label>Password</mat-label>
+              <input type="password" matInput placeholder="Password" [(ngModel)]="password">
+              <mat-icon matSuffix>vpn_key</mat-icon>
+            </mat-form-field>
+            <button mat-button color="primary" (click)="login()">Login</button>
+          </mat-tab>
+          <mat-tab label="Login As Administrator">
+            <mat-form-field class="example-full-width">
+              <mat-label>Email</mat-label>
+              <input type="email" matInput placeholder="Email" value="" [(ngModel)]="email">
+              <mat-icon matSuffix>email</mat-icon>
+            </mat-form-field>
+  
+            <mat-form-field class="example-full-width">
+              <mat-label>Password</mat-label>
+              <input type="password" matInput placeholder="Password" [(ngModel)]="password">
+              <mat-icon matSuffix>vpn_key</mat-icon>
+            </mat-form-field>
+            <button mat-button color="primary" (click)="login()">Login</button>
+          </mat-tab>
+        </mat-tab-group>
+  
+      </mat-card-content>
+  
+    </mat-card>
+  </div>
